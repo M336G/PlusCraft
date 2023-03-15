@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:reinforced_netherite"
+    },
+    "X": {
+      "item": "pluscraft:netherite_stick"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#X ",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:reinforced_netherite_axe"
+  }
+}

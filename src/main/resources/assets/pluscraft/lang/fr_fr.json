@@ -1,0 +1,18 @@
+{
+  "item.pluscraft.overloaded_diamond": "Diamant Surchargé",
+  "item.pluscraft.reinforced_netherite": "Netherite Renforcée",
+  "item.pluscraft.reinforced_netherite_sword": "Epée en Netherite Renforcée",
+  "item.pluscraft.reinforced_netherite_pickaxe": "Pioche en Netherite Renforcée",
+  "item.pluscraft.reinforced_netherite_shovel": "Pelle en Netherite Renforcée",
+  "item.pluscraft.overloaded_sword": "Epée Surchagée",
+  "item.pluscraft.overloaded_pickaxe": "Pioche Surchargée",
+  "item.pluscraft.reinforced_netherite_axe": "Hache en Netherite Renforcée",
+  "item.pluscraft.overloaded_axe": "Hache Surchargée",
+  "item.pluscraft.overloaded_shovel": "Pelle Surchargée",
+  "block.pluscraft.reinforced_netherite_block": "Bloc de Netherite Renforcée",
+  "block.pluscraft.overloaded_diamond_block": "Bloc de Diamant Surchargé",
+  "item.pluscraft.netherite_stick": "Manche en Netherite",
+
+
+  "itemgroup.pluscraft": "PlusCraft"
+}

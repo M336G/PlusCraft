@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:overloaded_diamond"
+    },
+    "X": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:overloaded_sword"
+  }
+}

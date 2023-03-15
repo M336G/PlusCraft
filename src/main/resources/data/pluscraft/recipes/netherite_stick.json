@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "#": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "pattern": [
+    "   ",
+    " # ",
+    " # "
+
+  ],
+  "result": {
+    "count": 4,
+    "item": "pluscraft:netherite_stick"
+  }
+}
