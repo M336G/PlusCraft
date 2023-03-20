@@ -15,11 +15,15 @@ public class ModItems {
 
     public static final ToolMaterial REINFORCED_NETHERITE_TOOL_MATERIAL = new ReinforcedNetheriteToolMaterial();
     public static final ToolMaterial OVERLOADED_TOOL_MATERIAL = new OverloadedToolMaterial();
+    public static final ToolMaterial DRAGON_TOOL_MATERIAL = new DragonToolMaterial();
 
     public static final Item OVERLOADED_DIAMOND = registerItem("overloaded_diamond",
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
     public static final Item REINFORCED_NETHERITE = registerItem("reinforced_netherite",
+            new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    public static final Item OVERLOADED_MATERIAL = registerItem("overloaded_material",
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
     public static final Item REINFORCED_NETHERITE_SWORD = registerItem("reinforced_netherite_sword",
@@ -28,6 +32,10 @@ public class ModItems {
 
     public static final Item OVERLOADED_SWORD = registerItem("overloaded_sword",
             new OverloadedSwordItem(OVERLOADED_TOOL_MATERIAL, -1, -2.4F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item DRAGON_SWORD = registerItem("dragon_sword",
+            new DragonSwordItem(DRAGON_TOOL_MATERIAL, -1, -2.4F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item REINFORCED_NETHERITE_PICKAXE = registerItem("reinforced_netherite_pickaxe",
@@ -66,6 +74,7 @@ public class ModItems {
 
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_DIAMOND);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_MATERIAL);
         addToItemGroup(ModItemGroup.PLUSCRAFT, NETHERITE_STICK);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SWORD);
@@ -75,6 +84,7 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_AXE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_SHOVEL);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SHOVEL);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, DRAGON_SWORD);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

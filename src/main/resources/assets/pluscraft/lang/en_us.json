@@ -12,6 +12,8 @@
   "block.pluscraft.reinforced_netherite_block": "Reinforced Netherite Block",
   "block.pluscraft.overloaded_diamond_block": "Overloaded Diamond Block",
   "item.pluscraft.netherite_stick": "Netherite Stick",
+  "item.pluscraft.overloaded_material": "Overloaded Material",
+  "item.pluscraft.dragon_sword": "Dragon Sword",
 
   "itemgroup.pluscraft": "PlusCraft"
 }
