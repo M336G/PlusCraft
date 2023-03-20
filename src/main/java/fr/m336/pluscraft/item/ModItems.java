@@ -62,6 +62,14 @@ public class ModItems {
             new ReinforcedNetheriteAxeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, 4, -3.0F,
                     new FabricItemSettings().fireproof()));
 
+    public static final Item REINFORCED_NETHERITE_HOE = registerItem("reinforced_netherite_hoe",
+            new ReinforcedNetheriteHoeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -15, 0.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item OVERLOADED_HOE = registerItem("overloaded_hoe",
+            new OverloadedHoeItem(OVERLOADED_TOOL_MATERIAL, -20, 0.0F,
+                    new FabricItemSettings().fireproof()));
+
     public static final Item NETHERITE_STICK = registerItem("netherite_stick",
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
@@ -84,7 +92,10 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_AXE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_SHOVEL);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SHOVEL);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HOE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, DRAGON_SWORD);
+
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
