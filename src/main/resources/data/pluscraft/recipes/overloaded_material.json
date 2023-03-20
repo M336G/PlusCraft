@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:overloaded_diamond_block"
+    },
+    "X": {
+      "item": "pluscraft:reinforced_netherite_block"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+
+  ],
+  "result": {
+    "item": "pluscraft:overloaded_material"
+  }
+}
