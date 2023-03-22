@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:overloaded_material"
+    },
+    "X": {
+      "item": "minecraft:dragon_egg"
+    }
+  },
+  "pattern": [
+    "XX ",
+    " # ",
+    " # "
+
+  ],
+  "result": {
+    "item": "pluscraft:cosmic_hoe"
+  }
+}

@@ -16,7 +16,9 @@
   "item.pluscraft.dragon_sword": "Epée du Dragon",
   "item.pluscraft.overloaded_hoe": "Houe Surchargée",
   "item.pluscraft.reinforced_netherite_hoe": "Houe en Netherite Renforcée",
+  "item.pluscraft.cosmic_hoe": "Houe Cosmique",
 
+  "item.pluscraft.cosmic_hoe.tooltip": "Sérieusement.. ?",
 
   "itemgroup.pluscraft": "PlusCraft"
 }

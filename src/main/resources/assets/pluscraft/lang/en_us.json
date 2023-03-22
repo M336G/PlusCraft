@@ -16,6 +16,9 @@
   "item.pluscraft.dragon_sword": "Dragon Sword",
   "item.pluscraft.overloaded_hoe": "Overloaded Hoe",
   "item.pluscraft.reinforced_netherite_hoe": "Reinforced Netherite Hoe",
+  "item.pluscraft.cosmic_hoe": "Cosmic Hoe",
+
+  "item.pluscraft.cosmic_hoe.tooltip": "Seriously..?",
 
   "itemgroup.pluscraft": "PlusCraft"
 }

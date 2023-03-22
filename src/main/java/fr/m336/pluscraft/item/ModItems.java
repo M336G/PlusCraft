@@ -16,6 +16,7 @@ public class ModItems {
     public static final ToolMaterial REINFORCED_NETHERITE_TOOL_MATERIAL = new ReinforcedNetheriteToolMaterial();
     public static final ToolMaterial OVERLOADED_TOOL_MATERIAL = new OverloadedToolMaterial();
     public static final ToolMaterial DRAGON_TOOL_MATERIAL = new DragonToolMaterial();
+    public static final ToolMaterial COSMIC_TOOL_MATERIAL = new CosmicToolMaterial();
 
     public static final Item OVERLOADED_DIAMOND = registerItem("overloaded_diamond",
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
@@ -36,7 +37,7 @@ public class ModItems {
 
     public static final Item DRAGON_SWORD = registerItem("dragon_sword",
             new DragonSwordItem(DRAGON_TOOL_MATERIAL, -1, -2.4F,
-                    new FabricItemSettings().fireproof()));
+                    new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
     public static final Item REINFORCED_NETHERITE_PICKAXE = registerItem("reinforced_netherite_pickaxe",
             new ReinforcedNetheritePickaxeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -7, -2.8F,
@@ -70,6 +71,10 @@ public class ModItems {
             new OverloadedHoeItem(OVERLOADED_TOOL_MATERIAL, -20, 0.0F,
                     new FabricItemSettings().fireproof()));
 
+    public static final Item COSMIC_HOE = registerItem("cosmic_hoe",
+            new CosmicHoeItem(COSMIC_TOOL_MATERIAL, -21, 0.0F,
+                    new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
     public static final Item NETHERITE_STICK = registerItem("netherite_stick",
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
@@ -95,6 +100,7 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, DRAGON_SWORD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, COSMIC_HOE);
 
     }
 

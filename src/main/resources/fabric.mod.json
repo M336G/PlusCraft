@@ -3,12 +3,12 @@
 	"id": "pluscraft",
 	"version": "${version}",
 	"name": "PlusCraft",
-	"description": "Adds more items to Minecraft!",
+	"description": "Adds more items to Minecraft!\n\nJoin our discord community!: https://discord.gg/UHwJZnBN",
 	"authors": [
 		"M336_"
 	],
 	"contact": {
-		"homepage": "",
+		"homepage": "https://github.com/M336G/PlusCraft/",
 		"sources": ""
 	},
 	"license": "CC BY-NC-SA 4.0",
