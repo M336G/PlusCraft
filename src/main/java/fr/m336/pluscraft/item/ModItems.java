@@ -3,13 +3,14 @@ package fr.m336.pluscraft.item;
 import fr.m336.pluscraft.PlusCraft;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+
+import static fr.m336.pluscraft.PlusCraft.*;
 
 public class ModItems {
 
@@ -78,6 +79,22 @@ public class ModItems {
     public static final Item NETHERITE_STICK = registerItem("netherite_stick",
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
+    public static final Item REINFORCED_NETHERITE_HELMET = registerItem("reinforced_netherite_helmet",
+            new ArmorItem(ReinforcedNetheriteArmorMaterial.REINFORCED_NETHERITE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item REINFORCED_NETHERITE_CHESTPLATE = registerItem("reinforced_netherite_chestplate",
+            new ArmorItem(ReinforcedNetheriteArmorMaterial.REINFORCED_NETHERITE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item REINFORCED_NETHERITE_LEGGINGS = registerItem("reinforced_netherite_leggings",
+            new ArmorItem(ReinforcedNetheriteArmorMaterial.REINFORCED_NETHERITE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item REINFORCED_NETHERITE_BOOTS = registerItem("reinforced_netherite_boots",
+            new ArmorItem(ReinforcedNetheriteArmorMaterial.REINFORCED_NETHERITE, EquipmentSlot.FEET,
+                    new FabricItemSettings().fireproof()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,new Identifier(PlusCraft.MOD_ID, name), item);
@@ -101,6 +118,10 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, DRAGON_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, COSMIC_HOE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HELMET);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_BOOTS);
 
     }
 

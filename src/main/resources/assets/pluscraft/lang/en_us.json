@@ -18,6 +18,11 @@
   "item.pluscraft.reinforced_netherite_hoe": "Reinforced Netherite Hoe",
   "item.pluscraft.cosmic_hoe": "Cosmic Hoe",
 
+  "item.pluscraft.reinforced_netherite_helmet": "Reinforced Netherite Helmet",
+  "item.pluscraft.reinforced_netherite_chestplate": "Reinforced Netherite Chestplate",
+  "item.pluscraft.reinforced_netherite_leggings": "Reinforced Netherite Leggings",
+  "item.pluscraft.reinforced_netherite_boots": "Reinforced Netherite Boots",
+
   "item.pluscraft.cosmic_hoe.tooltip": "Seriously..?",
 
   "itemgroup.pluscraft": "PlusCraft"

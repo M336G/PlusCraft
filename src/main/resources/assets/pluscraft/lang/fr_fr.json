@@ -20,5 +20,10 @@
 
   "item.pluscraft.cosmic_hoe.tooltip": "Sérieusement.. ?",
 
+  "item.pluscraft.reinforced_netherite_helmet": "Casque en Netherite Renforcée",
+  "item.pluscraft.reinforced_netherite_chestplate": "Plastron de Netherite Renforcée",
+  "item.pluscraft.reinforced_netherite_leggings": "Jambières en Netherite Renforcée",
+  "item.pluscraft.reinforced_netherite_boots": "Bottes en Netherite Renforcée",
+
   "itemgroup.pluscraft": "PlusCraft"
 }
