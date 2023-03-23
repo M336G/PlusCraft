@@ -18,6 +18,7 @@ public class ModItems {
     public static final ToolMaterial OVERLOADED_TOOL_MATERIAL = new OverloadedToolMaterial();
     public static final ToolMaterial DRAGON_TOOL_MATERIAL = new DragonToolMaterial();
     public static final ToolMaterial COSMIC_TOOL_MATERIAL = new CosmicToolMaterial();
+    public static final ToolMaterial OBSIDIAN_TOOL_MATERIAL = new ObsidianToolMaterial();
 
     public static final Item OVERLOADED_DIAMOND = registerItem("overloaded_diamond",
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
@@ -95,6 +96,29 @@ public class ModItems {
             new ArmorItem(ReinforcedNetheriteArmorMaterial.REINFORCED_NETHERITE, EquipmentSlot.FEET,
                     new FabricItemSettings().fireproof()));
 
+    public static final Item OBSIDIAN_STICK = registerItem("obsidian_stick",
+            new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
+            new ObsidianSwordItem(OBSIDIAN_TOOL_MATERIAL, -1, -2.4F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe",
+            new ObsidianPickaxeItem(OBSIDIAN_TOOL_MATERIAL, -4, -2.8F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe",
+            new ObsidianAxeItem(OBSIDIAN_TOOL_MATERIAL, 4, -3.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item OBSIDIAN_SHOVEL = registerItem("obsidian_shovel",
+            new ObsidianShovelItem(OBSIDIAN_TOOL_MATERIAL, -4, -3.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item OBSIDIAN_HOE = registerItem("obsidian_hoe",
+            new ObsidianHoeItem(OBSIDIAN_TOOL_MATERIAL, -10, 0.0F,
+                    new FabricItemSettings().fireproof()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,new Identifier(PlusCraft.MOD_ID, name), item);
@@ -105,7 +129,13 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_DIAMOND);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_MATERIAL);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_STICK);
         addToItemGroup(ModItemGroup.PLUSCRAFT, NETHERITE_STICK);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_SWORD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_PICKAXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_AXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_SHOVEL);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_PICKAXE);

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:obsidian"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
 
   ],
   "result": {
-    "item": "pluscraft:netherite_stick"
+    "item": "pluscraft:obsidian_stick"
   }
 }

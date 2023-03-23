@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "X": {
+      "item": "pluscraft:obsidian_stick"
+    }
+  },
+  "pattern": [
+    "## ",
+    " X ",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:obsidian_hoe"
+  }
+}
