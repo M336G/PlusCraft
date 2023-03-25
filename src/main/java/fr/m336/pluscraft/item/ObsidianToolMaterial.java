@@ -2,6 +2,7 @@ package fr.m336.pluscraft.item;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.MinecartItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -12,7 +13,7 @@ public class ObsidianToolMaterial implements ToolMaterial {
     private static final float ATTACK_DAMAGE = 10.0F;
     private static final int MINING_LEVEL = 4;
     private static final int ENCHANTABILITY = 15;
-    private static final Ingredient REPAIR_INGREDIENT = Ingredient.ofItems(ModItems.OBSIDIAN_STICK);
+    private static final Ingredient REPAIR_INGREDIENT = Ingredient.ofItems(Items.OBSIDIAN);
 
     @Override
     public int getDurability() {

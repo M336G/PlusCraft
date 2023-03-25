@@ -10,8 +10,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
-import static fr.m336.pluscraft.PlusCraft.*;
-
 public class ModItems {
 
     public static final ToolMaterial REINFORCED_NETHERITE_TOOL_MATERIAL = new ReinforcedNetheriteToolMaterial();
@@ -119,6 +117,22 @@ public class ModItems {
             new ObsidianHoeItem(OBSIDIAN_TOOL_MATERIAL, -10, 0.0F,
                     new FabricItemSettings().fireproof()));
 
+    public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
+            new ArmorItem(ObsidianArmorMaterial.OBSIDIAN, EquipmentSlot.HEAD,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
+            new ArmorItem(ObsidianArmorMaterial.OBSIDIAN, EquipmentSlot.CHEST,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings",
+            new ArmorItem(ObsidianArmorMaterial.OBSIDIAN, EquipmentSlot.LEGS,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots",
+            new ArmorItem(ObsidianArmorMaterial.OBSIDIAN, EquipmentSlot.FEET,
+                    new FabricItemSettings().fireproof()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,new Identifier(PlusCraft.MOD_ID, name), item);
@@ -152,6 +166,10 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_LEGGINGS);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_BOOTS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_HELMET);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_BOOTS);
 
     }
 

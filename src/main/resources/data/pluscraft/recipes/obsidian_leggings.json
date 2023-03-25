@@ -3,14 +3,15 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "pluscraft:reinforced_netherite"
+      "item": "minecraft:obsidian"
     }
   },
   "pattern": [
     "###",
+    "# #",
     "# #"
   ],
   "result": {
-    "item": "pluscraft:reinforced_netherite_helmet"
+    "item": "pluscraft:obsidian_leggings"
   }
 }
