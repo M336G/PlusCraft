@@ -1,6 +1,14 @@
 {
-  "parent": "item/generated",
+  "parent": "item/handheld",
   "textures": {
     "layer0": "pluscraft:item/reinforced_netherite_pickaxe"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "pluscraft:item/reinforced_netherite_pickaxe_in_hand"
+    }
+  ]
 }

@@ -1,6 +1,14 @@
 {
-  "parent": "item/generated",
+  "parent": "item/handheld",
   "textures": {
     "layer0": "pluscraft:item/overloaded_shovel"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "pluscraft:item/overloaded_shovel_in_hand"
+    }
+  ]
 }
