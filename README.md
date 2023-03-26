@@ -1,9 +1,9 @@
 # PlusCraft
-Latest version: 1.0.5
+Latest version: 1.0.6
 
 Minecraft version: 1.19.3
 
-PlusCraft is a Minecraft Mod that adds new contents to the game like tools, swords and blocks.
+PlusCraft is a Minecraft Mod that adds new contents to the game like tools, swords, armors and blocks.
 
 You can add this mod to your modpacks as long as you give credits.
 
