@@ -23,6 +23,17 @@
   "item.pluscraft.obsidian_axe": "Obsidian Axe",
   "item.pluscraft.obsidian_shovel": "Obsidian Shovel",
   "item.pluscraft.obsidian_hoe": "Obsidian Hoe",
+  "item.pluscraft.terbinth_shard": "Terbinth Shard",
+  "item.pluscraft.impervite": "Impervite",
+  "item.pluscraft.hypermentium": "Hypermentium",
+  "block.pluscraft.deepslate_impervite_ore": "Deepslate Impervite Ore",
+  "item.pluscraft.raw_impervite": "Raw Impervite",
+  "block.pluscraft.deepslate_hypermentium_ore": "Deepslate Hypermentium Ore",
+  "block.pluscraft.terbinth_crystal": "Terbinth Crystal",
+  "item.pluscraft.raw_hypermentium": "Raw Hypermentium",
+  "item.pluscraft.hypermentium_pickaxe": "Hypermentium Pickaxe",
+  "item.pluscraft.impervite_pickaxe": "Impervite Pickaxe",
+  "item.pluscraft.terbinth_pickaxe": "Terbinth Pickaxe",
 
   "item.pluscraft.obsidian_helmet": "Obsidian Helmet",
   "item.pluscraft.obsidian_chestplate": "Obsidian Chestplate",
@@ -34,6 +45,9 @@
   "item.pluscraft.reinforced_netherite_boots": "Reinforced Netherite Boots",
 
   "item.pluscraft.cosmic_hoe.tooltip": "Seriously..?",
+  "item.pluscraft.terbinth_shard.tooltip": "This looks quite dangerous...",
+  "item.pluscraft.hypermentium.tooltip": "This looks very powerful...",
+  "item.pluscraft.impervite.tooltip": "This looks a bit radioactive.. Maybe you shouldn't touch it?",
 
   "itemgroup.pluscraft": "PlusCraft"
 }

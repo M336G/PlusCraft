@@ -3,13 +3,13 @@ package fr.m336.pluscraft.item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class OverloadedToolMaterial implements ToolMaterial {
-    private static final int DURABILITY = 8192;
-    private static final float MINING_SPEED_MULTIPLIER = 50.0F;
-    private static final float ATTACK_DAMAGE = 20.0F;
-    private static final int MINING_LEVEL = 5;
+public class ImperviteToolMaterial implements ToolMaterial {
+    private static final int DURABILITY = 49152;
+    private static final float MINING_SPEED_MULTIPLIER = 70.0F;
+    private static final float ATTACK_DAMAGE = 40.0F;
+    private static final int MINING_LEVEL = 7;
     private static final int ENCHANTABILITY = 15;
-    private static final Ingredient REPAIR_INGREDIENT = Ingredient.ofItems(ModItems.OVERLOADED_DIAMOND);
+    private static final Ingredient REPAIR_INGREDIENT = Ingredient.ofItems(ModItems.IMPERVITE);
 
     @Override
     public int getDurability() {

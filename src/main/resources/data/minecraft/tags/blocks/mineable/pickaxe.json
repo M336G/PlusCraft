@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "pluscraft:reinforced_netherite_block",
-    "pluscraft:overloaded_diamond_block"
+    "pluscraft:overloaded_diamond_block",
+    "pluscraft:deepslate_hypermentium_ore",
+    "pluscraft:deepslate_impervite_ore",
+    "pluscraft:terbinth_crystal"
   ]
 }

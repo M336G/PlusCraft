@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "pluscraft:raw_hypermentium"
+  },
+  "result": "pluscraft:hypermentium"
+}

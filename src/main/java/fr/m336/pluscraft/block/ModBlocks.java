@@ -21,6 +21,15 @@ public class ModBlocks {
         public static final Block OVERLOADED_DIAMOND_BLOCK = registerBlock("overloaded_diamond_block",
                 new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
 
+    public static final Block DEEPSLATE_HYPERMENTIUM_ORE = registerBlock("deepslate_hypermentium_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
+
+    public static final Block DEEPSLATE_IMPERVITE_ORE = registerBlock("deepslate_impervite_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
+
+    public static final Block TERBINTH_CRYSTAL = registerBlock("terbinth_crystal",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(PlusCraft.MOD_ID, name), block);

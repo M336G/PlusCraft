@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "pluscraft:raw_impervite"
+  },
+  "result": "pluscraft:impervite"
+}

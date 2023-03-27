@@ -3,12 +3,18 @@ package fr.m336.pluscraft.item;
 import fr.m336.pluscraft.PlusCraft;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.world.World;
+
+import java.util.List;
 
 public class ModItems {
 
@@ -17,6 +23,9 @@ public class ModItems {
     public static final ToolMaterial DRAGON_TOOL_MATERIAL = new DragonToolMaterial();
     public static final ToolMaterial COSMIC_TOOL_MATERIAL = new CosmicToolMaterial();
     public static final ToolMaterial OBSIDIAN_TOOL_MATERIAL = new ObsidianToolMaterial();
+    public static final ToolMaterial HYPERMENTIUM_TOOL_MATERIAL = new HypermentiumToolMaterial();
+    public static final ToolMaterial IMPERVITE_TOOL_MATERIAL = new ImperviteToolMaterial();
+    public static final ToolMaterial TERBINTH_TOOL_MATERIAL = new TerbinthToolMaterial();
 
     public static final Item OVERLOADED_DIAMOND = registerItem("overloaded_diamond",
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
@@ -133,6 +142,35 @@ public class ModItems {
             new ArmorItem(ObsidianArmorMaterial.OBSIDIAN, EquipmentSlot.FEET,
                     new FabricItemSettings().fireproof()));
 
+    public static final Item TERBINTH_SHARD = registerItem("terbinth_shard",
+            new TerbinthShardItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    public static final Item HYPERMENTIUM = registerItem("hypermentium",
+            new HypermentiumItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    public static final Item IMPERVITE = registerItem("impervite",
+            new ImperviteItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    public static final Item RAW_IMPERVITE = registerItem("raw_impervite",
+            new Item(new FabricItemSettings().fireproof()));
+
+    public static final Item RAW_HYPERMENTIUM = registerItem("raw_hypermentium",
+            new Item(new FabricItemSettings().fireproof()));
+
+    public static final Item WATCHING_EYE = registerItem("watching_eye",
+            new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    public static final Item HYPERMENTIUM_PICKAXE = registerItem("hypermentium_pickaxe",
+            new HypermentiumPickaxeItem(HYPERMENTIUM_TOOL_MATERIAL, -16, -2.8F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item IMPERVITE_PICKAXE = registerItem("impervite_pickaxe",
+            new ImpervitePickaxeItem(IMPERVITE_TOOL_MATERIAL, -16, -2.8F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_PICKAXE = registerItem("terbinth_pickaxe",
+            new TerbinthPickaxeItem(TERBINTH_TOOL_MATERIAL, -16, -2.8F,
+                    new FabricItemSettings().fireproof()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,new Identifier(PlusCraft.MOD_ID, name), item);
@@ -143,6 +181,11 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_DIAMOND);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_MATERIAL);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, RAW_IMPERVITE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, RAW_HYPERMENTIUM);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_SHARD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_STICK);
         addToItemGroup(ModItemGroup.PLUSCRAFT, NETHERITE_STICK);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_SWORD);
@@ -160,6 +203,9 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SHOVEL);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_HOE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_PICKAXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_PICKAXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_PICKAXE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, DRAGON_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, COSMIC_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HELMET);

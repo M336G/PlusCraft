@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:hypermentium"
+    },
+    "X": {
+      "item": "pluscraft:netherite_stick"
+    }
+  },
+  "pattern": [
+    "###",
+    " X ",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:hypermentium_pickaxe"
+  }
+}
