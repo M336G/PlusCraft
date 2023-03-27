@@ -1,5 +1,5 @@
 # PlusCraft
-Latest version: 1.0.7
+Latest version: 1.0.8
 
 Minecraft version: 1.19.3
 
