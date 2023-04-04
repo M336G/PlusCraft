@@ -3,6 +3,7 @@ package fr.m336.pluscraft;
 import fr.m336.pluscraft.block.ModBlocks;
 import fr.m336.pluscraft.item.ModItemGroup;
 import fr.m336.pluscraft.item.ModItems;
+import fr.m336.pluscraft.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class PlusCraft implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "pluscraft:raw_hypermentium"
-  },
-  "result": "pluscraft:hypermentium"
-}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "pluscraft:reinforced_netherite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "pluscraft:reinforced_netherite"
+  }
+}

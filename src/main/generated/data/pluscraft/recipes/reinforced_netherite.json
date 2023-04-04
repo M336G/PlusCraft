@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "X": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "X#X",
+    "#X#"
+
+  ],
+  "result": {
+    "item": "pluscraft:reinforced_netherite"
+  }
+}

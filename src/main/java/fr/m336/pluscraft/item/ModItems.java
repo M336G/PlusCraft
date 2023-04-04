@@ -157,9 +157,6 @@ public class ModItems {
     public static final Item RAW_HYPERMENTIUM = registerItem("raw_hypermentium",
             new Item(new FabricItemSettings().fireproof()));
 
-    public static final Item WATCHING_EYE = registerItem("watching_eye",
-            new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
-
     public static final Item HYPERMENTIUM_PICKAXE = registerItem("hypermentium_pickaxe",
             new HypermentiumPickaxeItem(HYPERMENTIUM_TOOL_MATERIAL, -16, -2.8F,
                     new FabricItemSettings().fireproof()));
