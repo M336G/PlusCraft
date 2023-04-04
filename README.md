@@ -1,7 +1,9 @@
 # PlusCraft
-Latest version: 1.0.7
+Latest version: 1.0.8
 
 Minecraft version: 1.19.3
+
+API: Fabric
 
 PlusCraft is a Minecraft Mod that adds new contents to the game like tools, swords, armors and blocks.
 
