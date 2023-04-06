@@ -4,9 +4,7 @@ Latest version: 1.0.9
 
 Minecraft version: 1.19.3
 
-API: Fabric
-
-PlusCraft is a Minecraft Mod that adds new contents to the game like tools, swords, armors and blocks.
+PlusCraft is a Fabric mod for Minecraft that adds a variety of new features and items. Players can now craft powerful new weapons and tools to help them in their adventures. This mod also adds a variety of new minerals, both ore and raw, to give the players more materials to work with. PlusCraft also adds new armors and tools that are stronger, faster and more durable than the vanilla ones. With all these additions, PlusCraft is sure to be a great addition to any Minecraft world.
 
 You can add this mod to your modpacks as long as you give credits.
 
