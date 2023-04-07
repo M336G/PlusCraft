@@ -33,9 +33,9 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldTerbinthCrystals =
                 List.of(OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.TERBINTH_CRYSTAL.getDefaultState()));
 
-        register(context, DEEPSLATE_HYPERMENTIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldDeepslateHypermentiumOres, 12));
-        register(context, DEEPSLATE_IMPERVITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldDeepslateImperviteOres, 12));
-        register(context, TERBINTH_CRYSTAL_KEY, Feature.ORE, new OreFeatureConfig(overworldTerbinthCrystals, 12));
+        register(context, DEEPSLATE_HYPERMENTIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldDeepslateHypermentiumOres, 8));
+        register(context, DEEPSLATE_IMPERVITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldDeepslateImperviteOres, 6));
+        register(context, TERBINTH_CRYSTAL_KEY, Feature.ORE, new OreFeatureConfig(overworldTerbinthCrystals, 4));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

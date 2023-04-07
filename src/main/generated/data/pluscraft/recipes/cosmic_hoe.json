@@ -7,10 +7,13 @@
     },
     "X": {
       "item": "minecraft:dragon_egg"
+    },
+    "Y": {
+      "item": "pluscraft:ender_star"
     }
   },
   "pattern": [
-    "XX ",
+    "XY ",
     " # ",
     " # "
 

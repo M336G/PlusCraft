@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:ender_star"
+    },
+    "X": {
+      "item": "minecraft:dragon_egg"
+    },
+    "Y": {
+      "item": "pluscraft:terbinth_shard"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "X#X",
+    "XYX"
+
+  ],
+  "result": {
+    "item": "pluscraft:suspicious_sword"
+  }
+}

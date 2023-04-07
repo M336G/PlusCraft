@@ -25,15 +25,15 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, DEEPSLATE_HYPERMENTIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEEPSLATE_HYPERMENTIUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(16, // Veins per Chunk
+                ModOrePlacement.modifiersWithCount(8, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
 
         register(context, DEEPSLATE_IMPERVITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEEPSLATE_IMPERVITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(16, // Veins per Chunk
+                ModOrePlacement.modifiersWithCount(4, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
 
         register(context, TERBINTH_CRYSTAL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TERBINTH_CRYSTAL_KEY),
-                ModOrePlacement.modifiersWithCount(16, // Veins per Chunk
+                ModOrePlacement.modifiersWithCount(2, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
     }
 

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:impervite"
+    },
+    "X": {
+      "item": "pluscraft:netherite_stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " X ",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:impervite_shovel"
+  }
+}

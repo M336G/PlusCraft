@@ -37,47 +37,47 @@ public class ModItems {
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
     public static final Item REINFORCED_NETHERITE_SWORD = registerItem("reinforced_netherite_sword",
-            new ReinforcedNetheriteSwordItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -1, -2.4F,
+            new SwordItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -1, -2.4F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OVERLOADED_SWORD = registerItem("overloaded_sword",
-            new OverloadedSwordItem(OVERLOADED_TOOL_MATERIAL, -1, -2.4F,
+            new SwordItem(OVERLOADED_TOOL_MATERIAL, -1, -2.4F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item DRAGON_SWORD = registerItem("dragon_sword",
-            new DragonSwordItem(DRAGON_TOOL_MATERIAL, -1, -2.4F,
+            new SwordItem(DRAGON_TOOL_MATERIAL, 4, -2.4F,
                     new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
     public static final Item REINFORCED_NETHERITE_PICKAXE = registerItem("reinforced_netherite_pickaxe",
-            new ReinforcedNetheritePickaxeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -7, -2.8F,
+            new PickaxeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -7, -2.8F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item REINFORCED_NETHERITE_SHOVEL = registerItem("reinforced_netherite_shovel",
-            new ReinforcedNetheriteShovelItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -7, -3.0F,
+            new ShovelItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -7, -3.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OVERLOADED_PICKAXE = registerItem("overloaded_pickaxe",
-            new OverloadedPickaxeItem(OVERLOADED_TOOL_MATERIAL, -8, -2.8F,
+            new PickaxeItem(OVERLOADED_TOOL_MATERIAL, -8, -2.8F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OVERLOADED_SHOVEL = registerItem("overloaded_shovel",
-            new OverloadedShovelItem(OVERLOADED_TOOL_MATERIAL, -8, -3.0F,
+            new ShovelItem(OVERLOADED_TOOL_MATERIAL, -8, -3.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OVERLOADED_AXE = registerItem("overloaded_axe",
-            new OverloadedAxeItem(OVERLOADED_TOOL_MATERIAL, 4, -3.0F,
+            new AxeItem(OVERLOADED_TOOL_MATERIAL, 4, -3.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item REINFORCED_NETHERITE_AXE = registerItem("reinforced_netherite_axe",
-            new ReinforcedNetheriteAxeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, 4, -3.0F,
+            new AxeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, 4, -3.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item REINFORCED_NETHERITE_HOE = registerItem("reinforced_netherite_hoe",
-            new ReinforcedNetheriteHoeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -15, 0.0F,
+            new HoeItem(REINFORCED_NETHERITE_TOOL_MATERIAL, -15, 0.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OVERLOADED_HOE = registerItem("overloaded_hoe",
-            new OverloadedHoeItem(OVERLOADED_TOOL_MATERIAL, -20, 0.0F,
+            new HoeItem(OVERLOADED_TOOL_MATERIAL, -20, 0.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item COSMIC_HOE = registerItem("cosmic_hoe",
@@ -107,23 +107,23 @@ public class ModItems {
             new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
 
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
-            new ObsidianSwordItem(OBSIDIAN_TOOL_MATERIAL, -1, -2.4F,
+            new SwordItem(OBSIDIAN_TOOL_MATERIAL, -1, -2.4F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe",
-            new ObsidianPickaxeItem(OBSIDIAN_TOOL_MATERIAL, -4, -2.8F,
+            new PickaxeItem(OBSIDIAN_TOOL_MATERIAL, -4, -2.8F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe",
-            new ObsidianAxeItem(OBSIDIAN_TOOL_MATERIAL, 4, -3.0F,
+            new AxeItem(OBSIDIAN_TOOL_MATERIAL, 4, -3.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OBSIDIAN_SHOVEL = registerItem("obsidian_shovel",
-            new ObsidianShovelItem(OBSIDIAN_TOOL_MATERIAL, -4, -3.0F,
+            new ShovelItem(OBSIDIAN_TOOL_MATERIAL, -4, -3.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OBSIDIAN_HOE = registerItem("obsidian_hoe",
-            new ObsidianHoeItem(OBSIDIAN_TOOL_MATERIAL, -10, 0.0F,
+            new HoeItem(OBSIDIAN_TOOL_MATERIAL, -10, 0.0F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
@@ -158,15 +158,118 @@ public class ModItems {
             new Item(new FabricItemSettings().fireproof()));
 
     public static final Item HYPERMENTIUM_PICKAXE = registerItem("hypermentium_pickaxe",
-            new HypermentiumPickaxeItem(HYPERMENTIUM_TOOL_MATERIAL, -16, -2.8F,
+            new PickaxeItem(HYPERMENTIUM_TOOL_MATERIAL, -16, -2.8F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item IMPERVITE_PICKAXE = registerItem("impervite_pickaxe",
-            new ImpervitePickaxeItem(IMPERVITE_TOOL_MATERIAL, -16, -2.8F,
+            new PickaxeItem(IMPERVITE_TOOL_MATERIAL, -16, -2.8F,
                     new FabricItemSettings().fireproof()));
 
     public static final Item TERBINTH_PICKAXE = registerItem("terbinth_pickaxe",
-            new TerbinthPickaxeItem(TERBINTH_TOOL_MATERIAL, -16, -2.8F,
+            new PickaxeItem(TERBINTH_TOOL_MATERIAL, -16, -2.8F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item ENDER_STAR = registerItem("ender_star",
+            new Item(new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    public static final Item SUSPICIOUS_SWORD = registerItem("suspicious_sword",
+            new SuspiciousSwordItem(DRAGON_TOOL_MATERIAL, 9, -2.4F,
+                    new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+
+    public static final Item IMPERVITE_SWORD = registerItem("impervite_sword",
+            new SwordItem(IMPERVITE_TOOL_MATERIAL, -1, -2.4F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item IMPERVITE_SHOVEL = registerItem("impervite_shovel",
+            new ShovelItem(IMPERVITE_TOOL_MATERIAL, -21, -3.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item IMPERVITE_HOE = registerItem("impervite_hoe",
+            new HoeItem(IMPERVITE_TOOL_MATERIAL, -31, 0.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item IMPERVITE_AXE = registerItem("impervite_axe",
+            new AxeItem(IMPERVITE_TOOL_MATERIAL, 4, -3.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item IMPERVITE_HELMET = registerItem("impervite_helmet",
+            new ArmorItem(ImperviteArmorMaterial.IMPERVITE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item IMPERVITE_CHESTPLATE = registerItem("impervite_chestplate",
+            new ArmorItem(ImperviteArmorMaterial.IMPERVITE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item IMPERVITE_LEGGINGS = registerItem("impervite_leggings",
+            new ArmorItem(ImperviteArmorMaterial.IMPERVITE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item IMPERVITE_BOOTS = registerItem("impervite_boots",
+            new ArmorItem(ImperviteArmorMaterial.IMPERVITE, EquipmentSlot.FEET,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item HYPERMENTIUM_HELMET = registerItem("hypermentium_helmet",
+            new ArmorItem(HypermentiumArmorMaterial.HYPERMENTIUM, EquipmentSlot.HEAD,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item HYPERMENTIUM_CHESTPLATE = registerItem("hypermentium_chestplate",
+            new ArmorItem(HypermentiumArmorMaterial.HYPERMENTIUM, EquipmentSlot.CHEST,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item HYPERMENTIUM_LEGGINGS = registerItem("hypermentium_leggings",
+            new ArmorItem(HypermentiumArmorMaterial.HYPERMENTIUM, EquipmentSlot.LEGS,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item HYPERMENTIUM_BOOTS = registerItem("hypermentium_boots",
+            new ArmorItem(HypermentiumArmorMaterial.HYPERMENTIUM, EquipmentSlot.FEET,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_HELMET = registerItem("terbinth_helmet",
+            new ArmorItem(TerbinthArmorMaterial.TERBINTH, EquipmentSlot.HEAD,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_CHESTPLATE = registerItem("terbinth_chestplate",
+            new ArmorItem(TerbinthArmorMaterial.TERBINTH, EquipmentSlot.CHEST,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_LEGGINGS = registerItem("terbinth_leggings",
+            new ArmorItem(TerbinthArmorMaterial.TERBINTH, EquipmentSlot.LEGS,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_BOOTS = registerItem("terbinth_boots",
+            new ArmorItem(TerbinthArmorMaterial.TERBINTH, EquipmentSlot.FEET,
+                    new FabricItemSettings().fireproof()));
+    
+    public static final Item HYPERMENTIUM_SWORD = registerItem("hypermentium_sword",
+            new SwordItem(HYPERMENTIUM_TOOL_MATERIAL, -1, -2.4F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item HYPERMENTIUM_SHOVEL = registerItem("hypermentium_shovel",
+            new ShovelItem(HYPERMENTIUM_TOOL_MATERIAL, -21, -3.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item HYPERMENTIUM_HOE = registerItem("hypermentium_hoe",
+            new HoeItem(HYPERMENTIUM_TOOL_MATERIAL, -31, 0.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item HYPERMENTIUM_AXE = registerItem("hypermentium_axe",
+            new AxeItem(HYPERMENTIUM_TOOL_MATERIAL, 4, -3.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_SWORD = registerItem("terbinth_sword",
+            new SwordItem(TERBINTH_TOOL_MATERIAL, 4, -2.4F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_SHOVEL = registerItem("terbinth_shovel",
+            new ShovelItem(TERBINTH_TOOL_MATERIAL, -21, -3.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_MINIHOE = registerItem("terbinth_minihoe",
+            new HoeItem(TERBINTH_TOOL_MATERIAL, -31, 0.0F,
+                    new FabricItemSettings().fireproof()));
+
+    public static final Item TERBINTH_AXE = registerItem("terbinth_axe",
+            new AxeItem(TERBINTH_TOOL_MATERIAL, 9, -3.0F,
                     new FabricItemSettings().fireproof()));
 
     private static Item registerItem(String name, Item item) {
@@ -178,11 +281,12 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_DIAMOND);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_MATERIAL);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, RAW_IMPERVITE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, RAW_HYPERMENTIUM);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, RAW_IMPERVITE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM);
         addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_SHARD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, ENDER_STAR);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_STICK);
         addToItemGroup(ModItemGroup.PLUSCRAFT, NETHERITE_STICK);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_SWORD);
@@ -200,19 +304,43 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SHOVEL);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_HOE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_PICKAXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_AXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_SHOVEL);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_HOE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_PICKAXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_AXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_SHOVEL);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_HOE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_PICKAXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_AXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_SHOVEL);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_MINIHOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, DRAGON_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, COSMIC_HOE);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HELMET);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_CHESTPLATE);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_LEGGINGS);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_BOOTS);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_HELMET);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_LEGGINGS);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_BOOTS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HELMET);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_BOOTS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_HELMET);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_BOOTS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_HELMET);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_BOOTS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_HELMET);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_BOOTS);
 
     }
 
