@@ -12,23 +12,24 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block REINFORCED_NETHERITE_BLOCK = registerBlock("reinforced_netherite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(5.0F).requiresTool().sounds(BlockSoundGroup.NETHERITE)), ModItemGroup.PLUSCRAFT);
 
         public static final Block OVERLOADED_DIAMOND_BLOCK = registerBlock("overloaded_diamond_block",
-                new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
+                new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.PLUSCRAFT);
 
     public static final Block DEEPSLATE_HYPERMENTIUM_ORE = registerBlock("deepslate_hypermentium_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)), ModItemGroup.PLUSCRAFT);
 
     public static final Block DEEPSLATE_IMPERVITE_ORE = registerBlock("deepslate_impervite_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)), ModItemGroup.PLUSCRAFT);
 
     public static final Block TERBINTH_CRYSTAL = registerBlock("terbinth_crystal",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool()), ModItemGroup.PLUSCRAFT);
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(6.0F).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)), ModItemGroup.PLUSCRAFT);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

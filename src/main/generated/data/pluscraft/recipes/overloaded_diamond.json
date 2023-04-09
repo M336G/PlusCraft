@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "pluscraft:reinforced_netherite"
-    },
-    "X": {
       "item": "minecraft:diamond"
     },
+    "X": {
+      "item": "minecraft:amethyst_shard"
+    },
     "Y": {
-      "item": "minecraft:nether_star"
+      "item": "pluscraft:reinforced_netherite"
     }
   },
   "pattern": [

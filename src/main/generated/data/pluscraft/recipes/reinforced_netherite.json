@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "#X#",
+    "XXX",
     "X#X",
-    "#X#"
+    "XXX"
 
   ],
   "result": {

@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "pluscraft:overloaded_diamond_block"
+      "item": "pluscraft:overloaded_diamond"
     },
     "X": {
-      "item": "pluscraft:reinforced_netherite_block"
+      "item": "pluscraft:reinforced_netherite"
     }
   },
   "pattern": [
