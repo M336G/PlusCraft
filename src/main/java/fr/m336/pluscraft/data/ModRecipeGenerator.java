@@ -26,6 +26,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerSmelting(exporter, List.of(ModItems.RAW_IMPERVITE), RecipeCategory.MISC, ModItems.IMPERVITE,
                 0.7f, 200, "impervite");
 
+        offerBlasting(exporter, List.of(ModItems.RAW_HYPERMENTIUM), RecipeCategory.MISC, ModItems.HYPERMENTIUM,
+                0.7f, 100, "hypermentium");
+
+        offerBlasting(exporter, List.of(ModItems.RAW_IMPERVITE), RecipeCategory.MISC, ModItems.IMPERVITE,
+                0.7f, 100, "impervite");
+
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.REINFORCED_NETHERITE, RecipeCategory.DECORATIONS,
                 ModBlocks.REINFORCED_NETHERITE_BLOCK);
 

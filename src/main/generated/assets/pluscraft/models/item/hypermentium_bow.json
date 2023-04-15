@@ -1,0 +1,34 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "pluscraft:item/hypermentium_bow"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "pluscraft:item/hypermentium_bow_in_hand"
+    },
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "pluscraft:item/hypermentium_bow_pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.65
+      },
+      "model": "pluscraft:item/hypermentium_bow_pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9
+      },
+      "model": "pluscraft:item/hypermentium_bow_pulling_2"
+    }
+  ]
+}

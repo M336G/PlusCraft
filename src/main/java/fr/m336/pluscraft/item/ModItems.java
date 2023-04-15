@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -15,6 +17,7 @@ import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.UUID;
 
 public class ModItems {
 
@@ -272,6 +275,24 @@ public class ModItems {
             new AxeItem(TERBINTH_TOOL_MATERIAL, 9, -3.0F,
                     new FabricItemSettings().fireproof()));
 
+    public static final Item OBSIDIAN_BOW = registerItem("obsidian_bow",
+            new ObsidianBowItem(new Item.Settings().maxDamage(500)));
+
+    public static final Item REINFORCED_NETHERITE_BOW = registerItem("reinforced_netherite_bow",
+            new ReinforcedNetheriteBowItem(new Item.Settings().maxDamage(750)));
+
+    public static final Item OVERLOADED_BOW = registerItem("overloaded_bow",
+            new OverloadedBowItem(new Item.Settings().maxDamage(1000)));
+
+    public static final Item HYPERMENTIUM_BOW = registerItem("hypermentium_bow",
+            new HypermentiumBowItem(new Item.Settings().maxDamage(1500)));
+
+    public static final Item IMPERVITE_BOW = registerItem("impervite_bow",
+            new ImperviteBowItem(new Item.Settings().maxDamage(2000)));
+
+    public static final Item TERBINTH_BOW = registerItem("terbinth_bow",
+            new TerbinthBowItem(new Item.Settings().maxDamage(3000)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,new Identifier(PlusCraft.MOD_ID, name), item);
     }
@@ -321,6 +342,12 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_MINIHOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, DRAGON_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, COSMIC_HOE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_BOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_BOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_BOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_BOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_BOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_BOW);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_HELMET);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_LEGGINGS);
@@ -341,6 +368,7 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_LEGGINGS);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_BOOTS);
+
 
     }
 
