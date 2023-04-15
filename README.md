@@ -5,4 +5,9 @@ PlusCraft is a Fabric mod for Minecraft that adds a variety of new features and 
 
 You can add this mod to your modpacks as long as you give credits.
 
-Official Discord Server: https://discord.gg/GMmSBfeUJj
+-----------------------------------
+CurseForge Download: https://www.curseforge.com/minecraft/mc-mods/plus-craft
+
+Modrinth Download: https://modrinth.com/mod/pluscraft
+
+Join the Discord server!: https://discord.gg/GMmSBfeUJj
