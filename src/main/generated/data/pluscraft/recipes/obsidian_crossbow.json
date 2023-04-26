@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:obsidian_stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "Y": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "Z": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "#Z#",
+    "XYX",
+    " # "
+
+  ],
+  "result": {
+    "item": "pluscraft:obsidian_crossbow"
+  }
+}

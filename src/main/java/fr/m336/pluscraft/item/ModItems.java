@@ -276,22 +276,40 @@ public class ModItems {
                     new FabricItemSettings().fireproof()));
 
     public static final Item OBSIDIAN_BOW = registerItem("obsidian_bow",
-            new ObsidianBowItem(new Item.Settings().maxDamage(500)));
+            new ObsidianBowItem(new Item.Settings().maxDamage(500).fireproof()));
 
     public static final Item REINFORCED_NETHERITE_BOW = registerItem("reinforced_netherite_bow",
-            new ReinforcedNetheriteBowItem(new Item.Settings().maxDamage(750)));
+            new ReinforcedNetheriteBowItem(new Item.Settings().maxDamage(750).fireproof()));
 
     public static final Item OVERLOADED_BOW = registerItem("overloaded_bow",
-            new OverloadedBowItem(new Item.Settings().maxDamage(1000)));
+            new OverloadedBowItem(new Item.Settings().maxDamage(1000).fireproof()));
 
     public static final Item HYPERMENTIUM_BOW = registerItem("hypermentium_bow",
-            new HypermentiumBowItem(new Item.Settings().maxDamage(1500)));
+            new HypermentiumBowItem(new Item.Settings().maxDamage(1500).fireproof()));
 
     public static final Item IMPERVITE_BOW = registerItem("impervite_bow",
-            new ImperviteBowItem(new Item.Settings().maxDamage(2000)));
+            new ImperviteBowItem(new Item.Settings().maxDamage(2000).fireproof()));
 
     public static final Item TERBINTH_BOW = registerItem("terbinth_bow",
-            new TerbinthBowItem(new Item.Settings().maxDamage(3000)));
+            new TerbinthBowItem(new Item.Settings().maxDamage(3000).fireproof()));
+
+    public static final Item OBSIDIAN_CROSSBOW = registerItem("obsidian_crossbow",
+            new CrossbowItem(new Item.Settings().maxDamage(700).fireproof()));
+
+    public static final Item REINFORCED_NETHERITE_CROSSBOW = registerItem("reinforced_netherite_crossbow",
+            new CrossbowItem(new Item.Settings().maxDamage(1200).fireproof()));
+
+    public static final Item OVERLOADED_CROSSBOW = registerItem("overloaded_crossbow",
+            new CrossbowItem(new Item.Settings().maxDamage(1500).fireproof()));
+
+    public static final Item HYPERMENTIUM_CROSSBOW = registerItem("hypermentium_crossbow",
+            new CrossbowItem(new Item.Settings().maxDamage(2000).fireproof()));
+
+    public static final Item IMPERVITE_CROSSBOW = registerItem("impervite_crossbow",
+            new CrossbowItem(new Item.Settings().maxDamage(3000).fireproof()));
+
+    public static final Item TERBINTH_CROSSBOW = registerItem("terbinth_crossbow",
+            new CrossbowItem(new Item.Settings().maxDamage(4000).fireproof()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,new Identifier(PlusCraft.MOD_ID, name), item);
@@ -348,6 +366,12 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_BOW);
         addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_BOW);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_BOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_CROSSBOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_CROSSBOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_CROSSBOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_CROSSBOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_CROSSBOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_CROSSBOW);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_HELMET);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_LEGGINGS);
@@ -368,8 +392,6 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_LEGGINGS);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_BOOTS);
-
-
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

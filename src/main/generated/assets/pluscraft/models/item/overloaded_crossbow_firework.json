@@ -1,0 +1,6 @@
+{
+  "parent": "item/crossbow",
+  "textures": {
+    "layer0": "pluscraft:item/overloaded_crossbow_firework"
+  }
+}

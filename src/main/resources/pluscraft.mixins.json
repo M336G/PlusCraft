@@ -3,7 +3,7 @@
 	"package": "fr.m336.pluscraft.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"CrossbowItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

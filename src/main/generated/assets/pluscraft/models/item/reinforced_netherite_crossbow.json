@@ -1,0 +1,47 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "pluscraft:item/reinforced_netherite_crossbow_standby"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "pluscraft:item/reinforced_netherite_crossbow_in_hand"
+    },
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "pluscraft:item/reinforced_netherite_crossbow_pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.58
+      },
+      "model": "pluscraft:item/reinforced_netherite_crossbow_pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 1.0
+      },
+      "model": "pluscraft:item/reinforced_netherite_crossbow_pulling_2"
+    },
+    {
+      "predicate": {
+        "charged": 1
+      },
+      "model": "pluscraft:item/reinforced_netherite_crossbow_arrow"
+    },
+    {
+      "predicate": {
+        "charged": 1,
+        "firework": 1
+      },
+      "model": "pluscraft:item/reinforced_netherite_crossbow_firework"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:hypermentium"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "Y": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "Z": {
+      "item": "pluscraft:overloaded_diamond"
+    }
+  },
+  "pattern": [
+    "#Z#",
+    "XYX",
+    " # "
+
+  ],
+  "result": {
+    "item": "pluscraft:hypermentium_crossbow"
+  }
+}

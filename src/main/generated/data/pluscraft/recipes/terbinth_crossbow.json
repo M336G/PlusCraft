@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:terbinth_shard"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "Y": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "Z": {
+      "item": "pluscraft:impervite"
+    }
+  },
+  "pattern": [
+    "#Z#",
+    "XYX",
+    " # "
+
+  ],
+  "result": {
+    "item": "pluscraft:terbinth_crossbow"
+  }
+}

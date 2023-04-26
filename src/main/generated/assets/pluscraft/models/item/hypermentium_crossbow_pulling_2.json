@@ -1,0 +1,6 @@
+{
+  "parent": "item/crossbow",
+  "textures": {
+    "layer0": "pluscraft:item/hypermentium_crossbow_pulling_2"
+  }
+}

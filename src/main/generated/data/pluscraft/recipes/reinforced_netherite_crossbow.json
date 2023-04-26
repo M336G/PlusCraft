@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:netherite_stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "Y": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "Z": {
+      "item": "pluscraft:reinforced_netherite"
+    }
+  },
+  "pattern": [
+    "#Z#",
+    "XYX",
+    " # "
+
+  ],
+  "result": {
+    "item": "pluscraft:reinforced_netherite_crossbow"
+  }
+}
