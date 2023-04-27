@@ -21,6 +21,7 @@ PlusCraft also adds new recipes for Obsidian.
 
 
 You can add this mod to your modpacks as long as you give credits.
+
 -----------------------------------
 CurseForge Download: https://www.curseforge.com/minecraft/mc-mods/plus-craft
 
