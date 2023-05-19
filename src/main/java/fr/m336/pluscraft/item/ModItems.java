@@ -1,5 +1,6 @@
 package fr.m336.pluscraft.item;
 
+import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import fr.m336.pluscraft.PlusCraft;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -311,6 +312,26 @@ public class ModItems {
     public static final Item TERBINTH_CROSSBOW = registerItem("terbinth_crossbow",
             new CrossbowItem(new Item.Settings().maxDamage(4000).fireproof()));
 
+
+
+    public static final Item OBSIDIAN_SHIELD = registerItem("obsidian_shield",
+            new FabricShieldItem(new FabricItemSettings().fireproof().maxDamage(1000), 60, 13, Items.OBSIDIAN));
+
+    public static final Item REINFORCED_NETHERITE_SHIELD = registerItem("reinforced_netherite_shield",
+            new FabricShieldItem(new FabricItemSettings().fireproof().maxDamage(3000), 50, 13, ModItems.REINFORCED_NETHERITE));
+
+    public static final Item OVERLOADED_SHIELD = registerItem("overloaded_shield",
+            new FabricShieldItem(new FabricItemSettings().fireproof().maxDamage(6000), 40, 13, ModItems.OVERLOADED_DIAMOND));
+
+    public static final Item HYPERMENTIUM_SHIELD = registerItem("hypermentium_shield",
+            new FabricShieldItem(new FabricItemSettings().fireproof().maxDamage(12000), 30, 13, ModItems.HYPERMENTIUM));
+
+    public static final Item IMPERVITE_SHIELD = registerItem("impervite_shield",
+            new FabricShieldItem(new FabricItemSettings().fireproof().maxDamage(18000), 20, 13, ModItems.IMPERVITE));
+
+    public static final Item TERBINTH_SHIELD = registerItem("terbinth_shield",
+            new FabricShieldItem(new FabricItemSettings().fireproof().maxDamage(32000), 10, 13, ModItems.TERBINTH_SHARD));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,new Identifier(PlusCraft.MOD_ID, name), item);
     }
@@ -372,6 +393,12 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_CROSSBOW);
         addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_CROSSBOW);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_CROSSBOW);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_SHIELD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_SHIELD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SHIELD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_SHIELD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, IMPERVITE_SHIELD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_SHIELD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_HELMET);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_LEGGINGS);

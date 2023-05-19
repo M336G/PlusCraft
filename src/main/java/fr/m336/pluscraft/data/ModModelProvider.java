@@ -20,6 +20,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_HYPERMENTIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_IMPERVITE_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TERBINTH_CRYSTAL);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HYPERMENTIUM_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.IMPERVITE_BLOCK);
     }
 
     @Override

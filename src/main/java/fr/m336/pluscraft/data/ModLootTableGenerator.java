@@ -14,6 +14,8 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.REINFORCED_NETHERITE_BLOCK);
         addDrop(ModBlocks.OVERLOADED_DIAMOND_BLOCK);
+        addDrop(ModBlocks.HYPERMENTIUM_BLOCK);
+        addDrop(ModBlocks.IMPERVITE_BLOCK);
 
         addDrop(ModBlocks.DEEPSLATE_HYPERMENTIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_HYPERMENTIUM_ORE, ModItems.RAW_HYPERMENTIUM));
         addDrop(ModBlocks.DEEPSLATE_IMPERVITE_ORE, oreDrops(ModBlocks.DEEPSLATE_IMPERVITE_ORE, ModItems.RAW_IMPERVITE));

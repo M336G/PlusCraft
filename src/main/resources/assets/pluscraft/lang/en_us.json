@@ -48,6 +48,8 @@
   "item.pluscraft.impervite_axe": "Impervite Axe",
   "item.pluscraft.impervite_shovel": "Impervite Shovel",
   "item.pluscraft.impervite_hoe": "Impervite Hoe",
+  "block.pluscraft.hypermentium_block": "Hypermentium Block",
+  "block.pluscraft.impervite_block": "Impervite Block",
 
   "item.pluscraft.obsidian_bow": "Obsidian Bow",
   "item.pluscraft.reinforced_netherite_bow": "Reinforced Netherite Bow",
@@ -62,6 +64,13 @@
   "item.pluscraft.hypermentium_crossbow": "Hypermentium Crossbow",
   "item.pluscraft.impervite_crossbow": "Impervite Crossbow",
   "item.pluscraft.terbinth_crossbow": "Terbinth Crossbow",
+
+  "item.pluscraft.obsidian_shield": "Obsidian Shield",
+  "item.pluscraft.reinforced_netherite_shield": "Reinforced Netherite Shield",
+  "item.pluscraft.overloaded_shield": "Overloaded Shield",
+  "item.pluscraft.hypermentium_shield": "Hypermentium Shield",
+  "item.pluscraft.impervite_shield": "Impervite Shield",
+  "item.pluscraft.terbinth_shield": "Terbinth Shield",
 
   "item.pluscraft.obsidian_helmet": "Obsidian Helmet",
   "item.pluscraft.obsidian_chestplate": "Obsidian Chestplate",

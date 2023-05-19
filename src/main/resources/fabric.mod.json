@@ -5,14 +5,14 @@
 	"name": "PlusCraft",
 	"description": "PlusCraft is a Fabric mod for Minecraft that adds a variety of new features and items. Players can now craft powerful new weapons and tools to help them in their adventures. This mod also adds a variety of new minerals, both ore and raw, to give the players more materials to work with. PlusCraft also adds new armors and tools that are stronger, faster and more durable than the vanilla ones. With all these additions, PlusCraft is sure to be a great addition to any Minecraft world.\n\nJoin our discord community!: https://discord.gg/UHwJZnBN",
 	"authors": [
-		"M336_ (Owner & Developper)",
-		"Susperior (Artist)"
+		"M336_",
+		"Susperior"
 	],
 	"contact": {
 		"homepage": "https://github.com/M336G/PlusCraft/",
 		"sources": ""
 	},
-	"license": "Apache License 2.0",
+	"license": "LGPL-3.0 license",
 	"icon": "assets/pluscraft/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -33,7 +33,8 @@
 		"fabricloader": ">=0.14.17",
 		"minecraft": "~1.19.3",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabricshieldlib": ">=1.7-1.19.3"
 	},
 	"suggests": {
 		"another-mod": "*"

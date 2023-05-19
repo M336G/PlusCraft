@@ -5,6 +5,8 @@
     "pluscraft:overloaded_diamond_block",
     "pluscraft:deepslate_hypermentium_ore",
     "pluscraft:deepslate_impervite_ore",
-    "pluscraft:terbinth_crystal"
+    "pluscraft:terbinth_crystal",
+    "pluscraft:hypermentium_block",
+    "pluscraft:impervite_block"
   ]
 }

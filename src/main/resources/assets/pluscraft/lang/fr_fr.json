@@ -46,6 +46,8 @@
   "item.pluscraft.impervite_axe": "Hache en Impervite",
   "item.pluscraft.impervite_shovel": "Pelle en Impervite",
   "item.pluscraft.impervite_hoe": "Houe en Impervite",
+  "block.pluscraft.hypermentium_block": "Bloc d'Hypermentium",
+  "block.pluscraft.impervite_block": "Bloc d'Impervite",
 
   "item.pluscraft.obsidian_bow": "Arc en Obsidienne",
   "item.pluscraft.reinforced_netherite_bow": "Arc en Netherite Renforcée",
@@ -60,6 +62,13 @@
   "item.pluscraft.hypermentium_crossbow": "Arbalète en Hypermentium",
   "item.pluscraft.impervite_crossbow": "Arbalète en Impervite",
   "item.pluscraft.terbinth_crossbow": "Arbalète en Terbinth",
+
+  "item.pluscraft.obsidian_shield": "Bouclier en Obsidienne",
+  "item.pluscraft.reinforced_netherite_shield": "Bouclier en Netherite Renforcée",
+  "item.pluscraft.overloaded_shield": "Bouclier Surchargé",
+  "item.pluscraft.hypermentium_shield": "Bouclier en Hypermentium",
+  "item.pluscraft.impervite_shield": "Bouclier en Impervite",
+  "item.pluscraft.terbinth_shield": "Bouclier en Terbinth",
 
   "item.pluscraft.cosmic_hoe.tooltip": "Sérieusement.. ?",
   "item.pluscraft.terbinth_shard.tooltip": "Ça à l'air dangereux...",
@@ -86,7 +95,5 @@
   "item.pluscraft.terbinth_helmet": "Casque en Terbinth",
   "item.pluscraft.terbinth_chestplate": "Plastron en Terbinth",
   "item.pluscraft.terbinth_leggings": "Jambières en Terbinth",
-  "item.pluscraft.terbinth_boots": "Bottes en Terbinth",
-
-  "itemgroup.pluscraft": "PlusCraft"
+  "item.pluscraft.terbinth_boots": "Bottes en Terbinth"
 }

@@ -31,6 +31,12 @@ public class ModBlocks {
     public static final Block TERBINTH_CRYSTAL = registerBlock("terbinth_crystal",
             new Block(FabricBlockSettings.of(Material.AMETHYST).strength(6.0F).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)), ModItemGroup.PLUSCRAFT);
 
+    public static final Block HYPERMENTIUM_BLOCK = registerBlock("hypermentium_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.PLUSCRAFT);
+
+    public static final Block IMPERVITE_BLOCK = registerBlock("impervite_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.PLUSCRAFT);
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(PlusCraft.MOD_ID, name), block);

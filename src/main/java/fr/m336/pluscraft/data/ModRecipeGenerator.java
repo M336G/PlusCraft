@@ -37,6 +37,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.OVERLOADED_DIAMOND, RecipeCategory.DECORATIONS,
                 ModBlocks.OVERLOADED_DIAMOND_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.HYPERMENTIUM, RecipeCategory.DECORATIONS,
+                ModBlocks.HYPERMENTIUM_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.IMPERVITE, RecipeCategory.DECORATIONS,
+                ModBlocks.IMPERVITE_BLOCK);
     }
 
 }

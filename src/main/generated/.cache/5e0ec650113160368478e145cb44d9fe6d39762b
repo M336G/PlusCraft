@@ -1,6 +1,8 @@
-// 1.19.3	2023-04-05T11:00:42.4427905	PlusCraft/Block Loot Tables
+// 1.19.3	2023-04-27T22:28:18.8181665	PlusCraft/Block Loot Tables
+d4b19fccecac67c93979a37e655e7bd310c62e55 data\pluscraft\loot_tables\blocks\impervite_block.json
 ca20f158d8e8adaebfb431fbf96bfdbc9bf6306d data\pluscraft\loot_tables\blocks\deepslate_hypermentium_ore.json
 8c6d11f2d66573a58cf2ce992fb2cdb6603bd740 data\pluscraft\loot_tables\blocks\reinforced_netherite_block.json
 dc3372c18dd1f59ee92ab0dd8c3496eec90265b0 data\pluscraft\loot_tables\blocks\overloaded_diamond_block.json
 5558437c3816eb6a7f52855d9986fb71e79415df data\pluscraft\loot_tables\blocks\deepslate_impervite_ore.json
 c4a31dcb11338a3d5860588ac4176f7e7e2b0012 data\pluscraft\loot_tables\blocks\terbinth_crystal.json
+eb909381da0808924e81629a42491abc6c689aba data\pluscraft\loot_tables\blocks\hypermentium_block.json
