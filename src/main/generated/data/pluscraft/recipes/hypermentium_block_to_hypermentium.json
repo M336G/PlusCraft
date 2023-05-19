@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "pluscraft:hypermentium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "pluscraft:hypermentium"
+  }
+}

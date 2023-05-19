@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:reinforced_netherite"
+    },
+    "X": {
+      "item": "pluscraft:overloaded_diamond"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "XXX",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:overloaded_shield"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:overloaded_diamond"
+    },
+    "X": {
+      "item": "pluscraft:hypermentium"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "XXX",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:hypermentium_shield"
+  }
+}

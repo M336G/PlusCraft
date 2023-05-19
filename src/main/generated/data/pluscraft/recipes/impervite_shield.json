@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:hypermentium"
+    },
+    "X": {
+      "item": "pluscraft:impervite"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "XXX",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:impervite_shield"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "Y": {
+      "item": "pluscraft:reinforced_netherite"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#Y#",
+    "X#X"
+
+  ],
+  "result": {
+    "item": "pluscraft:overloaded_diamond"
+  }
+}

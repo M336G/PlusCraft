@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:impervite"
+    },
+    "X": {
+      "item": "pluscraft:terbinth_shard"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "XXX",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:terbinth_shield"
+  }
+}

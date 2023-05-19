@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "pluscraft:block/deepslate_impervite_ore"
+  }
+}
