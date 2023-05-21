@@ -1,5 +1,5 @@
 # PlusCraft
-![Mod Presentation Image 3](https://user-images.githubusercontent.com/75208577/234597584-7cfeda6b-cd6e-4820-88e2-222b81990cc2.png)
+![Mod Presentation Image 4](https://github.com/M336G/PlusCraft/assets/75208577/94b1281f-c90f-4346-8d52-d09c32b6266e)
 
 What is PlusCraft?
 
