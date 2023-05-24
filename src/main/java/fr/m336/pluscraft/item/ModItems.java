@@ -4,21 +4,12 @@ import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import fr.m336.pluscraft.PlusCraft;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-import net.minecraft.world.World;
-
-import java.util.List;
-import java.util.UUID;
 
 public class ModItems {
 
@@ -135,7 +126,7 @@ public class ModItems {
                     new FabricItemSettings().fireproof()));
 
     public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
-            new ArmorItem(ObsidianArmorMaterial.OBSIDIAN, EquipmentSlot.CHEST,
+            new ObsidianArmorItem(ObsidianArmorMaterial.OBSIDIAN, EquipmentSlot.CHEST,
                     new FabricItemSettings().fireproof()));
 
     public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings",
@@ -201,7 +192,7 @@ public class ModItems {
                     new FabricItemSettings().fireproof()));
 
     public static final Item IMPERVITE_CHESTPLATE = registerItem("impervite_chestplate",
-            new ArmorItem(ImperviteArmorMaterial.IMPERVITE, EquipmentSlot.CHEST,
+            new ImperviteArmorItem(ImperviteArmorMaterial.IMPERVITE, EquipmentSlot.CHEST,
                     new FabricItemSettings().fireproof()));
 
     public static final Item IMPERVITE_LEGGINGS = registerItem("impervite_leggings",
@@ -217,7 +208,7 @@ public class ModItems {
                     new FabricItemSettings().fireproof()));
 
     public static final Item HYPERMENTIUM_CHESTPLATE = registerItem("hypermentium_chestplate",
-            new ArmorItem(HypermentiumArmorMaterial.HYPERMENTIUM, EquipmentSlot.CHEST,
+            new HypermentiumArmorItem(HypermentiumArmorMaterial.HYPERMENTIUM, EquipmentSlot.CHEST,
                     new FabricItemSettings().fireproof()));
 
     public static final Item HYPERMENTIUM_LEGGINGS = registerItem("hypermentium_leggings",
@@ -233,7 +224,7 @@ public class ModItems {
                     new FabricItemSettings().fireproof()));
 
     public static final Item TERBINTH_CHESTPLATE = registerItem("terbinth_chestplate",
-            new ArmorItem(TerbinthArmorMaterial.TERBINTH, EquipmentSlot.CHEST,
+            new TerbinthArmorItem(TerbinthArmorMaterial.TERBINTH, EquipmentSlot.CHEST,
                     new FabricItemSettings().fireproof()));
 
     public static final Item TERBINTH_LEGGINGS = registerItem("terbinth_leggings",
@@ -312,8 +303,6 @@ public class ModItems {
     public static final Item TERBINTH_CROSSBOW = registerItem("terbinth_crossbow",
             new CrossbowItem(new Item.Settings().maxDamage(4000).fireproof()));
 
-
-
     public static final Item OBSIDIAN_SHIELD = registerItem("obsidian_shield",
             new FabricShieldItem(new FabricItemSettings().fireproof().maxDamage(1000), 60, 13, Items.OBSIDIAN));
 
@@ -331,6 +320,10 @@ public class ModItems {
 
     public static final Item TERBINTH_SHIELD = registerItem("terbinth_shield",
             new FabricShieldItem(new FabricItemSettings().fireproof().maxDamage(32000), 10, 13, ModItems.TERBINTH_SHARD));
+
+    public static final Item SUNGLASSES = registerItem("sunglasses",
+            new SunglassesArmorItem(SunglassesArmorMaterial.SUNGLASSES, EquipmentSlot.HEAD,
+                    new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,new Identifier(PlusCraft.MOD_ID, name), item);
@@ -355,14 +348,14 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_SHOVEL);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OBSIDIAN_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_SWORD);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_PICKAXE);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_PICKAXE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_AXE);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_AXE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_SHOVEL);
-        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SHOVEL);
         addToItemGroup(ModItemGroup.PLUSCRAFT, REINFORCED_NETHERITE_HOE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SWORD);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_PICKAXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_AXE);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_SHOVEL);
         addToItemGroup(ModItemGroup.PLUSCRAFT, OVERLOADED_HOE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_SWORD);
         addToItemGroup(ModItemGroup.PLUSCRAFT, HYPERMENTIUM_PICKAXE);
@@ -419,6 +412,7 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_LEGGINGS);
         addToItemGroup(ModItemGroup.PLUSCRAFT, TERBINTH_BOOTS);
+        addToItemGroup(ModItemGroup.PLUSCRAFT, SUNGLASSES);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
