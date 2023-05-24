@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:black_stained_glass_pane"
+    }
+  },
+  "pattern": [
+    "X#X"
+
+  ],
+  "result": {
+    "item": "pluscraft:sunglasses"
+  }
+}
