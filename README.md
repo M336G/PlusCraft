@@ -1,5 +1,5 @@
 # PlusCraft
-![Mod Presentation Image 3](https://user-images.githubusercontent.com/75208577/234597584-7cfeda6b-cd6e-4820-88e2-222b81990cc2.png)
+![Mod Presentation Image 5](https://github.com/M336G/PlusCraft/assets/75208577/e9bdbe9b-f739-4301-8f29-8208766e4dcf)
 
 What is PlusCraft?
 
@@ -23,6 +23,8 @@ PlusCraft also adds new recipes for Obsidian.
 You can add this mod to your modpacks as long as you give credits.
 
 -----------------------------------
+Website: https://www.pluscraft.fr/
+
 CurseForge Download: https://www.curseforge.com/minecraft/mc-mods/plus-craft
 
 Modrinth Download: https://modrinth.com/mod/pluscraft
