@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "pluscraft:item/enderrack_hoe"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "pluscraft:item/enderrack_hoe_in_hand"
+    }
+  ]
+}

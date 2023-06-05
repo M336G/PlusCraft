@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:blazerite"
+    }
+  },
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+
+  ],
+  "result": {
+    "item": "pluscraft:blazerite_chestplate"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:enderrack"
+    },
+    "X": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "###",
+    " # "
+
+  ],
+  "result": {
+    "item": "pluscraft:enderrack_shield"
+  }
+}

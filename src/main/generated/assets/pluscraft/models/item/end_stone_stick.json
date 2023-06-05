@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "pluscraft:item/end_stone_stick"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "pluscraft:item/end_stone_stick_in_hand"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:blazerite"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "Y": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "Z": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "#Z#",
+    "XYX",
+    " # "
+
+  ],
+  "result": {
+    "item": "pluscraft:blazerite_crossbow"
+  }
+}

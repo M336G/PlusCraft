@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "pluscraft:blazerite"
+    },
+    "X": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#X ",
+    " X "
+
+  ],
+  "result": {
+    "item": "pluscraft:blazerite_axe"
+  }
+}
