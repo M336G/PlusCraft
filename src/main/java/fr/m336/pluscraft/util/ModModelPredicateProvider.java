@@ -11,6 +11,8 @@ import net.minecraft.util.Identifier;
 public class ModModelPredicateProvider {
     public static void registerModModels() {
         registerBow(ModItems.OBSIDIAN_BOW);
+        registerBow(ModItems.BLAZERITE_BOW);
+        registerBow(ModItems.ENDERRACK_BOW);
         registerBow(ModItems.REINFORCED_NETHERITE_BOW);
         registerBow(ModItems.OVERLOADED_BOW);
         registerBow(ModItems.HYPERMENTIUM_BOW);
@@ -18,6 +20,8 @@ public class ModModelPredicateProvider {
         registerBow(ModItems.TERBINTH_BOW);
 
         registerCrossbow(ModItems.OBSIDIAN_CROSSBOW);
+        registerCrossbow(ModItems.BLAZERITE_CROSSBOW);
+        registerCrossbow(ModItems.ENDERRACK_CROSSBOW);
         registerCrossbow(ModItems.REINFORCED_NETHERITE_CROSSBOW);
         registerCrossbow(ModItems.OVERLOADED_CROSSBOW);
         registerCrossbow(ModItems.HYPERMENTIUM_CROSSBOW);

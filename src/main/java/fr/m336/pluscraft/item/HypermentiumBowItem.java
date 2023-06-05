@@ -42,12 +42,12 @@ public class HypermentiumBowItem extends BowItem {
             ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
             PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
             persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 3.0f, 1.0f);
-            persistentProjectileEntity.setDamage(18.0);
+            persistentProjectileEntity.setDamage(24.0);
             if (f == 1.0f) {
                 persistentProjectileEntity.setCritical(true);
             }
             if ((j = EnchantmentHelper.getLevel(Enchantments.POWER, stack)) > 0) {
-                persistentProjectileEntity.setDamage(18 + (double)j * 0.5 + 0.5);
+                persistentProjectileEntity.setDamage(24 + (double)j * 0.5 + 0.5);
             }
             if ((k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack)) > 0) {
                 persistentProjectileEntity.setPunch(k);

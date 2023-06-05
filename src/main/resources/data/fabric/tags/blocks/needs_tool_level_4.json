@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "pluscraft:overloaded_diamond_block",
-    "pluscraft:reinforced_netherite_block"
+    "pluscraft:blazerite_ore",
+    "pluscraft:blazerite_block"
   ]
 }

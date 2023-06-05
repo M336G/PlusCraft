@@ -7,7 +7,7 @@ public class HypermentiumToolMaterial implements ToolMaterial {
     private static final int DURABILITY = 32768;
     private static final float MINING_SPEED_MULTIPLIER = 60.0F;
     private static final float ATTACK_DAMAGE = 35.0F;
-    private static final int MINING_LEVEL = 6;
+    private static final int MINING_LEVEL = 9;
     private static final int ENCHANTABILITY = 15;
     private static final Ingredient REPAIR_INGREDIENT = Ingredient.ofItems(ModItems.HYPERMENTIUM);
 

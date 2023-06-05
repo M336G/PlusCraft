@@ -18,6 +18,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> DEEPSLATE_HYPERMENTIUM_ORE_PLACED_KEY = registerKey("deepslate_hypermentium_ore_placed");
     public static final RegistryKey<PlacedFeature> DEEPSLATE_IMPERVITE_ORE_PLACED_KEY = registerKey("deepslate_impervite_ore_placed");
     public static final RegistryKey<PlacedFeature> TERBINTH_CRYSTAL_PLACED_KEY = registerKey("terbinth_crystal_placed");
+    public static final RegistryKey<PlacedFeature> BLAZERITE_ORE_PLACED_KEY = registerKey("blazerite_ore_placed");
+    public static final RegistryKey<PlacedFeature> ENDERRACK_ORE_PLACED_KEY = registerKey("enderrack_ore_placed");
 
 
 
@@ -35,6 +37,14 @@ public class ModPlacedFeatures {
         register(context, TERBINTH_CRYSTAL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TERBINTH_CRYSTAL_KEY),
                 ModOrePlacement.modifiersWithCount(2, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, BLAZERITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLAZERITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(8, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.fixed(60))));
+
+        register(context, ENDERRACK_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ENDERRACK_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(8, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-10), YOffset.fixed(80))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

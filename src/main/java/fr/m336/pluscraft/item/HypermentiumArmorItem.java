@@ -17,7 +17,7 @@ public class HypermentiumArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(HypermentiumArmorMaterial.HYPERMENTIUM,
-                            new StatusEffectInstance(StatusEffects.REGENERATION, 0, 1)).build();
+                            new StatusEffectInstance(StatusEffects.REGENERATION, 1, 1)).build();
 
     public HypermentiumArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);

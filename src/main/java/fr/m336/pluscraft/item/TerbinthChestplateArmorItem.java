@@ -13,13 +13,13 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class TerbinthArmorItem extends ArmorItem {
+public class TerbinthChestplateArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(TerbinthArmorMaterial.TERBINTH,
-                            new StatusEffectInstance(StatusEffects.STRENGTH, 0, 1)).build();
+                            new StatusEffectInstance(StatusEffects.STRENGTH, 1, 1)).build();
 
-    public TerbinthArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public TerbinthChestplateArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
@@ -59,22 +59,14 @@ public class TerbinthArmorItem extends ArmorItem {
     }
 
     private boolean hasFullSuitOfArmorOn(PlayerEntity player) {
-        ItemStack boots = player.getInventory().getArmorStack(0);
-        ItemStack leggings = player.getInventory().getArmorStack(1);
         ItemStack breastplate = player.getInventory().getArmorStack(2);
-        ItemStack helmet = player.getInventory().getArmorStack(3);
 
-        return !helmet.isEmpty() && !breastplate.isEmpty()
-                && !leggings.isEmpty() && !boots.isEmpty();
+        return !breastplate.isEmpty();
     }
 
     private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
-        ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
-        ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
 
-        return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
-                leggings.getMaterial() == material && boots.getMaterial() == material;
+        return breastplate.getMaterial() == material;
     }
 }

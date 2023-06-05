@@ -43,6 +43,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.IMPERVITE, RecipeCategory.DECORATIONS,
                 ModBlocks.IMPERVITE_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BLAZERITE, RecipeCategory.DECORATIONS,
+                ModBlocks.BLAZERITE_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ENDERRACK, RecipeCategory.DECORATIONS,
+                ModBlocks.ENDERRACK_BLOCK);
     }
 
 }

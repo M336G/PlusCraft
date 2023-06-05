@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "pluscraft:deepslate_impervite_ore",
-    "pluscraft:impervite_block"
+    "pluscraft:reinforced_netherite_block"
   ]
 }

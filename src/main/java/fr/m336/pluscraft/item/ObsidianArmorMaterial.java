@@ -76,6 +76,6 @@ public enum ObsidianArmorMaterial implements ArmorMaterial {
     }
 
     static {
-        BASE_DURABILITY = new int[]{24, 32, 48, 16};
+        BASE_DURABILITY = new int[]{18, 25, 40, 12};
     }
 }

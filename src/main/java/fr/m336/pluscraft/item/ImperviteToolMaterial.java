@@ -7,7 +7,7 @@ public class ImperviteToolMaterial implements ToolMaterial {
     private static final int DURABILITY = 49152;
     private static final float MINING_SPEED_MULTIPLIER = 70.0F;
     private static final float ATTACK_DAMAGE = 40.0F;
-    private static final int MINING_LEVEL = 7;
+    private static final int MINING_LEVEL = 10;
     private static final int ENCHANTABILITY = 15;
     private static final Ingredient REPAIR_INGREDIENT = Ingredient.ofItems(ModItems.IMPERVITE);
 

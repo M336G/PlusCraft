@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "pluscraft:deepslate_hypermentium_ore",
-    "pluscraft:hypermentium_block"
+    "pluscraft:enderrack_ore",
+    "pluscraft:enderrack_block"
   ]
 }

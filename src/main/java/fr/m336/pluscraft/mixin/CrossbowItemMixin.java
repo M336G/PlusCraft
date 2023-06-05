@@ -19,6 +19,14 @@ public class CrossbowItemMixin {
 			persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() * 5.0F);
 			info.setReturnValue(persistentProjectileEntity);
 		}
+		if (crossbow.getItem() == ModItems.BLAZERITE_CROSSBOW) {
+			persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() * 6.0F);
+			info.setReturnValue(persistentProjectileEntity);
+		}
+		if (crossbow.getItem() == ModItems.ENDERRACK_CROSSBOW) {
+			persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() * 6.5F);
+			info.setReturnValue(persistentProjectileEntity);
+		}
 		if (crossbow.getItem() == ModItems.REINFORCED_NETHERITE_CROSSBOW) {
 			persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() * 7.5F);
 			info.setReturnValue(persistentProjectileEntity);

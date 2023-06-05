@@ -37,6 +37,18 @@ public class ModBlocks {
     public static final Block IMPERVITE_BLOCK = registerBlock("impervite_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.PLUSCRAFT);
 
+    public static final Block BLAZERITE_ORE = registerBlock("blazerite_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool().sounds(BlockSoundGroup.NETHERRACK)), ModItemGroup.PLUSCRAFT);
+
+    public static final Block ENDERRACK_ORE = registerBlock("enderrack_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6.0F).requiresTool().sounds(BlockSoundGroup.STONE)), ModItemGroup.PLUSCRAFT);
+
+    public static final Block BLAZERITE_BLOCK = registerBlock("blazerite_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.PLUSCRAFT);
+
+    public static final Block ENDERRACK_BLOCK = registerBlock("enderrack_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.PLUSCRAFT);
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(PlusCraft.MOD_ID, name), block);

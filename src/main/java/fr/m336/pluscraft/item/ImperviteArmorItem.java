@@ -17,7 +17,7 @@ public class ImperviteArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ImperviteArmorMaterial.IMPERVITE,
-                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 0, 0)).build();
+                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1, 0)).build();
 
     public ImperviteArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);

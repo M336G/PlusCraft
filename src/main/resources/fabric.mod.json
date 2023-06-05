@@ -9,8 +9,8 @@
 		"Susperior"
 	],
 	"contact": {
-		"homepage": "https://github.com/M336G/PlusCraft/",
-		"sources": ""
+		"homepage": "https://www.pluscraft.fr/",
+		"sources": "https://github.com/M336G/PlusCraft/"
 	},
 	"license": "LGPL-3.0 license",
 	"icon": "assets/pluscraft/icon.png",

@@ -7,7 +7,7 @@ public class OverloadedToolMaterial implements ToolMaterial {
     private static final int DURABILITY = 8192;
     private static final float MINING_SPEED_MULTIPLIER = 50.0F;
     private static final float ATTACK_DAMAGE = 20.0F;
-    private static final int MINING_LEVEL = 5;
+    private static final int MINING_LEVEL = 8;
     private static final int ENCHANTABILITY = 15;
     private static final Ingredient REPAIR_INGREDIENT = Ingredient.ofItems(ModItems.OVERLOADED_DIAMOND);
 

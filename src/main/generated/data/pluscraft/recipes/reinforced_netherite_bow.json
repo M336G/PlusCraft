@@ -7,11 +7,14 @@
     },
     "X": {
       "item": "minecraft:string"
+    },
+    "Y": {
+      "item": "pluscraft:reinforced_netherite"
     }
   },
   "pattern": [
     " #X",
-    "# X",
+    "Y X",
     " #X"
 
   ],

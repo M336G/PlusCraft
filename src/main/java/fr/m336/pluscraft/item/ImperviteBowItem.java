@@ -42,12 +42,12 @@ public class ImperviteBowItem extends BowItem {
             ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
             PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
             persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 3.0f, 1.0f);
-            persistentProjectileEntity.setDamage(20.0);
+            persistentProjectileEntity.setDamage(26.0);
             if (f == 1.0f) {
                 persistentProjectileEntity.setCritical(true);
             }
             if ((j = EnchantmentHelper.getLevel(Enchantments.POWER, stack)) > 0) {
-                persistentProjectileEntity.setDamage(20 + (double)j * 0.5 + 0.5);
+                persistentProjectileEntity.setDamage(26 + (double)j * 0.5 + 0.5);
             }
             if ((k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack)) > 0) {
                 persistentProjectileEntity.setPunch(k);

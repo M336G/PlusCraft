@@ -22,6 +22,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TERBINTH_CRYSTAL);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HYPERMENTIUM_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.IMPERVITE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLAZERITE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ENDERRACK_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLAZERITE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ENDERRACK_BLOCK);
     }
 
     @Override
@@ -29,5 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_HYPERMENTIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_IMPERVITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TERBINTH_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLAZERITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDERRACK, Models.GENERATED);
     }
 }

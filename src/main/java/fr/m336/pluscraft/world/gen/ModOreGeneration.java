@@ -15,5 +15,11 @@ public class ModOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.TERBINTH_CRYSTAL_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BLAZERITE_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ENDERRACK_ORE_PLACED_KEY);
     }
 }

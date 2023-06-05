@@ -17,7 +17,7 @@ public class SunglassesArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(SunglassesArmorMaterial.SUNGLASSES,
-                            new StatusEffectInstance(StatusEffects.NIGHT_VISION, 0, 0)).build();
+                            new StatusEffectInstance(StatusEffects.NIGHT_VISION, 2000, 0)).build();
 
     public SunglassesArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
