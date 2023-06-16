@@ -17,7 +17,7 @@ public class BlazeriteArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(BlazeriteArmorMaterial.BLAZERITE,
-                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1, 0)).build();
+                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 100, 0)).build();
 
     public BlazeriteArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -68,13 +68,19 @@ public class BlazeriteArmorItem extends ArmorItem {
                 && !leggings.isEmpty() && !boots.isEmpty();
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
-        ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
-        ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
-        ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
+    private boolean hasCorrectArmorOn(ArmorMaterial mapArmorMaterial, PlayerEntity player) {
+        for(ItemStack armorStack : player.getArmorItems()) {
+            if(!(armorStack.getItem() instanceof ArmorItem)) {
+                return false;
+            }
+        }
 
-        return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
-                leggings.getMaterial() == material && boots.getMaterial() == material;
+        ArmorItem boots = ((ArmorItem) player.getInventory().getArmorStack(0).getItem());
+        ArmorItem leggings = ((ArmorItem) player.getInventory().getArmorStack(1).getItem());
+        ArmorItem chestplate = ((ArmorItem) player.getInventory().getArmorStack(2).getItem());
+        ArmorItem helmet = ((ArmorItem) player.getInventory().getArmorStack(3).getItem());
+
+        return helmet.getMaterial() == mapArmorMaterial && chestplate.getMaterial() == mapArmorMaterial &&
+                leggings.getMaterial() == mapArmorMaterial && boots.getMaterial() == mapArmorMaterial;
     }
 }

@@ -17,7 +17,7 @@ public class EnderrackLeggingsArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(EnderrackArmorMaterial.ENDERRACK,
-                            new StatusEffectInstance(StatusEffects.SPEED, 1, 1)).build();
+                            new StatusEffectInstance(StatusEffects.SPEED, 100, 1)).build();
 
     public EnderrackLeggingsArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -64,9 +64,13 @@ public class EnderrackLeggingsArmorItem extends ArmorItem {
         return !leggings.isEmpty();
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
+    private boolean hasCorrectArmorOn(ArmorMaterial mapArmorMaterial, PlayerEntity player) {
+        if(!(player.getInventory().getArmorStack(1).getItem() instanceof ArmorItem)) {
+            return false;
+        }
 
-        return leggings.getMaterial() == material;
+        ArmorItem leggings = ((ArmorItem) player.getInventory().getArmorStack(1).getItem());
+
+        return leggings.getMaterial() == mapArmorMaterial;
     }
 }

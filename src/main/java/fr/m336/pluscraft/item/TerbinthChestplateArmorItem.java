@@ -17,7 +17,7 @@ public class TerbinthChestplateArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(TerbinthArmorMaterial.TERBINTH,
-                            new StatusEffectInstance(StatusEffects.STRENGTH, 1, 1)).build();
+                            new StatusEffectInstance(StatusEffects.STRENGTH, 100, 1)).build();
 
     public TerbinthChestplateArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -64,9 +64,13 @@ public class TerbinthChestplateArmorItem extends ArmorItem {
         return !breastplate.isEmpty();
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
+    private boolean hasCorrectArmorOn(ArmorMaterial mapArmorMaterial, PlayerEntity player) {
+        if(!(player.getInventory().getArmorStack(2).getItem() instanceof ArmorItem)) {
+            return false;
+        }
 
-        return breastplate.getMaterial() == material;
+        ArmorItem chestplate = ((ArmorItem) player.getInventory().getArmorStack(2).getItem());
+
+        return chestplate.getMaterial() == mapArmorMaterial;
     }
 }

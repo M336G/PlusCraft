@@ -64,9 +64,13 @@ public class SunglassesArmorItem extends ArmorItem {
         return !helmet.isEmpty();
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
+    private boolean hasCorrectArmorOn(ArmorMaterial mapArmorMaterial, PlayerEntity player) {
+        if(!(player.getInventory().getArmorStack(3).getItem() instanceof ArmorItem)) {
+            return false;
+        }
 
-        return helmet.getMaterial() == material;
+        ArmorItem helmet = ((ArmorItem) player.getInventory().getArmorStack(3).getItem());
+
+        return helmet.getMaterial() == mapArmorMaterial;
     }
 }

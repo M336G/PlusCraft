@@ -16,8 +16,8 @@ import java.util.Map;
 public class TerbinthBootsArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ReinforcedNetheriteArmorMaterial.REINFORCED_NETHERITE,
-                            new StatusEffectInstance(StatusEffects.SPEED, 1, 1)).build();
+                    .put(TerbinthArmorMaterial.TERBINTH,
+                            new StatusEffectInstance(StatusEffects.SPEED, 100, 1)).build();
 
     public TerbinthBootsArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -64,9 +64,13 @@ public class TerbinthBootsArmorItem extends ArmorItem {
         return !boots.isEmpty();
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
+    private boolean hasCorrectArmorOn(ArmorMaterial mapArmorMaterial, PlayerEntity player) {
+        if(!(player.getInventory().getArmorStack(0).getItem() instanceof ArmorItem)) {
+            return false;
+        }
 
-        return boots.getMaterial() == material;
+        ArmorItem boots = ((ArmorItem) player.getInventory().getArmorStack(0).getItem());
+
+        return boots.getMaterial() == mapArmorMaterial;
     }
 }
