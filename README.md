@@ -1,5 +1,5 @@
 # PlusCraft
-![Mod Presentation Image 5](https://github.com/M336G/PlusCraft/assets/75208577/e9bdbe9b-f739-4301-8f29-8208766e4dcf)
+![Mod Presentation Image 6](https://github.com/M336G/PlusCraft/assets/75208577/fa56f1c6-c2ee-48bf-8329-74239880a20c)
 
 What is PlusCraft?
 
@@ -10,6 +10,8 @@ What does PlusCraft adds?
 
 PlusCraft adds 6 new materials to the game, which can be used to craft different weapons, tools or armors:
 
+- Blazerite
+- Enderrack
 - Reinforced Netherite
 - Overloaded Diamond
 - Overloaded Material
