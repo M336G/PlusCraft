@@ -27,8 +27,8 @@ You can add this mod to your modpacks as long as you give credits.
 -----------------------------------
 Website: https://www.pluscraft.fr/
 
-CurseForge Download: https://www.curseforge.com/minecraft/mc-mods/plus-craft
+CurseForge Download: https://curseforge.pluscraft.fr/
 
-Modrinth Download: https://modrinth.com/mod/pluscraft
+Modrinth Download: https://modrinth.pluscraft.fr/
 
-Join the Discord server!: https://discord.gg/GMmSBfeUJj
+Join the Discord server!: https://discord.pluscraft.fr/
