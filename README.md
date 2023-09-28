@@ -1,4 +1,7 @@
 # PlusCraft
+
+# Mod is now discontinued. Thanks for playing!
+
 ![Mod Presentation Image 6](https://github.com/M336G/PlusCraft/assets/75208577/fa56f1c6-c2ee-48bf-8329-74239880a20c)
 
 What is PlusCraft?
